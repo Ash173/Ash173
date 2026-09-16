@@ -1,0 +1,68 @@
+{
+  "login": "Ash173",
+  "name": "Ashwin R Nair",
+  "repos": 17,
+  "contributed": 0,
+  "stars": 6,
+  "followers": 6,
+  "following": 9,
+  "commits": 60,
+  "commits_this_year": 21,
+  "contributions_total": 80,
+  "loc_added": 12316,
+  "loc_deleted": 50,
+  "loc_net": 12266,
+  "top_repo": "LMS_RLS_verilog",
+  "top_repo_stars": 3,
+  "languages": [
+    {
+      "name": "Jupyter Notebook",
+      "bytes": 1184543,
+      "pct": 77.5,
+      "color": "#DA5B0B"
+    },
+    {
+      "name": "Python",
+      "bytes": 144363,
+      "pct": 9.4,
+      "color": "#3572A5"
+    },
+    {
+      "name": "SystemVerilog",
+      "bytes": 86396,
+      "pct": 5.7,
+      "color": "#DAE1C2"
+    },
+    {
+      "name": "Verilog",
+      "bytes": 52111,
+      "pct": 3.4,
+      "color": "#b2b7f8"
+    },
+    {
+      "name": "HTML",
+      "bytes": 31767,
+      "pct": 2.1,
+      "color": "#e34c26"
+    },
+    {
+      "name": "MATLAB",
+      "bytes": 29044,
+      "pct": 1.9,
+      "color": "#e16737"
+    },
+    {
+      "name": "C++",
+      "bytes": 412,
+      "pct": 0.0,
+      "color": "#f34b7d"
+    },
+    {
+      "name": "Rocq Prover",
+      "bytes": 2,
+      "pct": 0.0,
+      "color": "#d0b68c"
+    }
+  ],
+  "updated": "2026-09-16 14:45 UTC"
+}
