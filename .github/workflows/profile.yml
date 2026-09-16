@@ -1,1 +1,66 @@
 
+name: Build profile card
+
+on:
+  schedule:
+    # 04:00 UTC daily = 09:30 IST. Cron on GitHub is UTC and can run late
+    # under load; that's fine, the card only needs to be roughly current.
+    - cron: "0 4 * * *"
+  push:
+    branches: [main]
+    paths:
+      - "ascii.txt"
+      - "config.py"
+      - "generate.py"
+      - "stats.py"
+      - ".github/workflows/profile.yml"
+  workflow_dispatch:        # lets you run it by hand from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-card
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Keeps the per-repo line-count cache between runs so the daily job
+      # only rescans repos whose head commit actually moved.
+      - name: Restore LOC cache
+        uses: actions/cache@v4
+        with:
+          path: cache
+          key: loc-cache-${{ github.run_id }}
+          restore-keys: loc-cache-
+
+      # Falls back to the built-in token if you haven't added a PAT yet —
+      # that works, but it can't see private repos or restricted contributions.
+      - name: Fetch stats
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN || github.token }}
+        run: python3 stats.py
+
+      - name: Build SVGs
+        run: python3 generate.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dark_mode.svg light_mode.svg stats.json cache/loc.json
+          if git diff --staged --quiet; then
+            echo "No change."
+          else
+            git commit -m "chore: refresh profile card [skip ci]"
+            git push
+          fi
