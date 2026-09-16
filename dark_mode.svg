@@ -64,9 +64,9 @@
 <tspan x="24" dy="20">::::::::++=+=:-=++++*****++*++:=+++****++==-:......::::::::::-----------:::-----</tspan>
 </text>
 <rect x="1003.2" y="608.5" width="211.2" height="9" rx="4.5" fill="#2b2d40"/>
-<rect x="1003.2" y="608.5" width="160.3" height="9" rx="4.5" fill="#DA5B0B"/>
+<rect x="1003.2" y="608.5" width="160.5" height="9" rx="4.5" fill="#DA5B0B"/>
 <rect x="1003.2" y="628.5" width="211.2" height="9" rx="4.5" fill="#2b2d40"/>
-<rect x="1003.2" y="628.5" width="23.9" height="9" rx="4.5" fill="#3572A5"/>
+<rect x="1003.2" y="628.5" width="23.7" height="9" rx="4.5" fill="#3572A5"/>
 <rect x="1003.2" y="648.5" width="211.2" height="9" rx="4.5" fill="#2b2d40"/>
 <rect x="1003.2" y="648.5" width="11.6" height="9" rx="4.5" fill="#DAE1C2"/>
 <rect x="1003.2" y="668.5" width="211.2" height="9" rx="4.5" fill="#2b2d40"/>
@@ -97,14 +97,14 @@
 <tspan x="830.4" dy="20"><tspan fill="#e4bf7a"> - GitHub Stats </tspan><tspan fill="#4a5163">-------------------------------------------------</tspan></tspan>
 <tspan x="830.4" dy="20"><tspan fill="#38bdae"> . Repos:</tspan><tspan fill="#3f465a"> ......................</tspan><tspan fill="#d9dde3"> 17 {Contributed: 0}  |  Stars: 6</tspan></tspan>
 <tspan x="830.4" dy="20"><tspan fill="#38bdae"> . Followers:</tspan><tspan fill="#3f465a"> ................................</tspan><tspan fill="#d9dde3"> 6  |  Following: 9</tspan></tspan>
-<tspan x="830.4" dy="20"><tspan fill="#38bdae"> . Commits:</tspan><tspan fill="#3f465a"> ................................</tspan><tspan fill="#d9dde3"> 73  |  This year: 34</tspan></tspan>
-<tspan x="830.4" dy="20"><tspan fill="#38bdae"> . Contributions:</tspan><tspan fill="#3f465a"> ...................................</tspan><tspan fill="#d9dde3"> 93 all time</tspan></tspan>
+<tspan x="830.4" dy="20"><tspan fill="#38bdae"> . Commits:</tspan><tspan fill="#3f465a"> ................................</tspan><tspan fill="#d9dde3"> 74  |  This year: 35</tspan></tspan>
+<tspan x="830.4" dy="20"><tspan fill="#38bdae"> . Contributions:</tspan><tspan fill="#3f465a"> ...................................</tspan><tspan fill="#d9dde3"> 94 all time</tspan></tspan>
 <tspan x="830.4" dy="20"><tspan fill="#38bdae"> . Most Starred:</tspan><tspan fill="#3f465a"> ............................</tspan><tspan fill="#d9dde3"> LMS_RLS_verilog (3)</tspan></tspan>
-<tspan x="830.4" dy="20"><tspan fill="#38bdae"> . Lines of Code:</tspan><tspan fill="#3f465a"> ...................</tspan><tspan fill="#d9dde3"> 13,644 ( </tspan><tspan fill="#3fb950">13,870++</tspan><tspan fill="#d9dde3">, </tspan><tspan fill="#f85149">226--</tspan><tspan fill="#d9dde3"> )</tspan></tspan>
+<tspan x="830.4" dy="20"><tspan fill="#38bdae"> . Lines of Code:</tspan><tspan fill="#3f465a"> ...................</tspan><tspan fill="#d9dde3"> 13,596 ( </tspan><tspan fill="#3fb950">13,885++</tspan><tspan fill="#d9dde3">, </tspan><tspan fill="#f85149">289--</tspan><tspan fill="#d9dde3"> )</tspan></tspan>
 <tspan x="830.4" dy="20"> </tspan>
 <tspan x="830.4" dy="20"><tspan fill="#e4bf7a"> - Top Languages </tspan><tspan fill="#4a5163">------------------------------------------------</tspan></tspan>
-<tspan x="830.4" dy="20"><tspan fill="#d9dde3"> . Jupyter Notebo </tspan><tspan>                      </tspan><tspan fill="#d9dde3">                   75.9%</tspan></tspan>
-<tspan x="830.4" dy="20"><tspan fill="#d9dde3"> . Python         </tspan><tspan>                      </tspan><tspan fill="#d9dde3">                   11.3%</tspan></tspan>
+<tspan x="830.4" dy="20"><tspan fill="#d9dde3"> . Jupyter Notebo </tspan><tspan>                      </tspan><tspan fill="#d9dde3">                   76.0%</tspan></tspan>
+<tspan x="830.4" dy="20"><tspan fill="#d9dde3"> . Python         </tspan><tspan>                      </tspan><tspan fill="#d9dde3">                   11.2%</tspan></tspan>
 <tspan x="830.4" dy="20"><tspan fill="#d9dde3"> . SystemVerilog  </tspan><tspan>                      </tspan><tspan fill="#d9dde3">                    5.5%</tspan></tspan>
 <tspan x="830.4" dy="20"><tspan fill="#d9dde3"> . Verilog        </tspan><tspan>                      </tspan><tspan fill="#d9dde3">                    3.3%</tspan></tspan>
 <tspan x="830.4" dy="20"><tspan fill="#d9dde3"> . HTML           </tspan><tspan>                      </tspan><tspan fill="#d9dde3">                    2.0%</tspan></tspan>

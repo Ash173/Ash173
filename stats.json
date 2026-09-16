@@ -6,25 +6,25 @@
   "stars": 6,
   "followers": 6,
   "following": 9,
-  "commits": 73,
-  "commits_this_year": 34,
-  "contributions_total": 93,
-  "loc_added": 13870,
-  "loc_deleted": 226,
-  "loc_net": 13644,
+  "commits": 74,
+  "commits_this_year": 35,
+  "contributions_total": 94,
+  "loc_added": 13885,
+  "loc_deleted": 289,
+  "loc_net": 13596,
   "top_repo": "LMS_RLS_verilog",
   "top_repo_stars": 3,
   "languages": [
     {
       "name": "Jupyter Notebook",
       "bytes": 1184543,
-      "pct": 75.9,
+      "pct": 76.0,
       "color": "#DA5B0B"
     },
     {
       "name": "Python",
-      "bytes": 176146,
-      "pct": 11.3,
+      "bytes": 173994,
+      "pct": 11.2,
       "color": "#3572A5"
     },
     {
