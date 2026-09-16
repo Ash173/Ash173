@@ -53,15 +53,15 @@
 <tspan x="24" dy="20">  @@@@@@%%%%%%%%%%%%%%@%***#**++++===+#*+++++*#%@@@@########################%%%%%@@%%%%%%%%%%####***</tspan>
 </text>
 <rect x="1195.2" y="608.5" width="211.2" height="9" rx="4.5" fill="#eaeef2"/>
-<rect x="1195.2" y="608.5" width="163.7" height="9" rx="4.5" fill="#DA5B0B"/>
+<rect x="1195.2" y="608.5" width="160.5" height="9" rx="4.5" fill="#DA5B0B"/>
 <rect x="1195.2" y="628.5" width="211.2" height="9" rx="4.5" fill="#eaeef2"/>
-<rect x="1195.2" y="628.5" width="19.9" height="9" rx="4.5" fill="#3572A5"/>
+<rect x="1195.2" y="628.5" width="23.7" height="9" rx="4.5" fill="#3572A5"/>
 <rect x="1195.2" y="648.5" width="211.2" height="9" rx="4.5" fill="#eaeef2"/>
-<rect x="1195.2" y="648.5" width="12.0" height="9" rx="4.5" fill="#DAE1C2"/>
+<rect x="1195.2" y="648.5" width="11.6" height="9" rx="4.5" fill="#DAE1C2"/>
 <rect x="1195.2" y="668.5" width="211.2" height="9" rx="4.5" fill="#eaeef2"/>
-<rect x="1195.2" y="668.5" width="7.2" height="9" rx="4.5" fill="#b2b7f8"/>
+<rect x="1195.2" y="668.5" width="7.0" height="9" rx="4.5" fill="#b2b7f8"/>
 <rect x="1195.2" y="688.5" width="211.2" height="9" rx="4.5" fill="#eaeef2"/>
-<rect x="1195.2" y="688.5" width="4.4" height="9" rx="4.5" fill="#e34c26"/>
+<rect x="1195.2" y="688.5" width="4.2" height="9" rx="4.5" fill="#e34c26"/>
 <text x="1022.4" y="40" xml:space="preserve">
 <tspan x="1022.4" dy="0"><tspan fill="#0969da" font-weight="bold">ashwinrnair</tspan><tspan fill="#afb8c1"> -----------------------------------------------------</tspan></tspan>
 <tspan x="1022.4" dy="20"><tspan fill="#1f7a6f"> . OS:</tspan><tspan fill="#c4cbd4"> .......................................</tspan><tspan fill="#24292f"> Windows 11, Ubuntu</tspan></tspan>
@@ -86,18 +86,18 @@
 <tspan x="1022.4" dy="20"><tspan fill="#953800"> - GitHub Stats </tspan><tspan fill="#afb8c1">-------------------------------------------------</tspan></tspan>
 <tspan x="1022.4" dy="20"><tspan fill="#1f7a6f"> . Repos:</tspan><tspan fill="#c4cbd4"> ......................</tspan><tspan fill="#24292f"> 17 {Contributed: 0}  |  Stars: 6</tspan></tspan>
 <tspan x="1022.4" dy="20"><tspan fill="#1f7a6f"> . Followers:</tspan><tspan fill="#c4cbd4"> ................................</tspan><tspan fill="#24292f"> 6  |  Following: 9</tspan></tspan>
-<tspan x="1022.4" dy="20"><tspan fill="#1f7a6f"> . Commits:</tspan><tspan fill="#c4cbd4"> ................................</tspan><tspan fill="#24292f"> 60  |  This year: 21</tspan></tspan>
-<tspan x="1022.4" dy="20"><tspan fill="#1f7a6f"> . Contributions:</tspan><tspan fill="#c4cbd4"> ...................................</tspan><tspan fill="#24292f"> 80 all time</tspan></tspan>
+<tspan x="1022.4" dy="20"><tspan fill="#1f7a6f"> . Commits:</tspan><tspan fill="#c4cbd4"> ................................</tspan><tspan fill="#24292f"> 68  |  This year: 28</tspan></tspan>
+<tspan x="1022.4" dy="20"><tspan fill="#1f7a6f"> . Contributions:</tspan><tspan fill="#c4cbd4"> ...................................</tspan><tspan fill="#24292f"> 87 all time</tspan></tspan>
 <tspan x="1022.4" dy="20"><tspan fill="#1f7a6f"> . Most Starred:</tspan><tspan fill="#c4cbd4"> ............................</tspan><tspan fill="#24292f"> LMS_RLS_verilog (3)</tspan></tspan>
-<tspan x="1022.4" dy="20"><tspan fill="#1f7a6f"> . Lines of Code:</tspan><tspan fill="#c4cbd4"> ....................</tspan><tspan fill="#24292f"> 12,266 ( </tspan><tspan fill="#1a7f37">12,316++</tspan><tspan fill="#24292f">, </tspan><tspan fill="#cf222e">50--</tspan><tspan fill="#24292f"> )</tspan></tspan>
+<tspan x="1022.4" dy="20"><tspan fill="#1f7a6f"> . Lines of Code:</tspan><tspan fill="#c4cbd4"> ...................</tspan><tspan fill="#24292f"> 13,574 ( </tspan><tspan fill="#1a7f37">13,676++</tspan><tspan fill="#24292f">, </tspan><tspan fill="#cf222e">102--</tspan><tspan fill="#24292f"> )</tspan></tspan>
 <tspan x="1022.4" dy="20"> </tspan>
 <tspan x="1022.4" dy="20"><tspan fill="#953800"> - Top Languages </tspan><tspan fill="#afb8c1">------------------------------------------------</tspan></tspan>
-<tspan x="1022.4" dy="20"><tspan fill="#24292f"> . Jupyter Notebo </tspan><tspan>                      </tspan><tspan fill="#24292f">                   77.5%</tspan></tspan>
-<tspan x="1022.4" dy="20"><tspan fill="#24292f"> . Python         </tspan><tspan>                      </tspan><tspan fill="#24292f">                    9.4%</tspan></tspan>
-<tspan x="1022.4" dy="20"><tspan fill="#24292f"> . SystemVerilog  </tspan><tspan>                      </tspan><tspan fill="#24292f">                    5.7%</tspan></tspan>
-<tspan x="1022.4" dy="20"><tspan fill="#24292f"> . Verilog        </tspan><tspan>                      </tspan><tspan fill="#24292f">                    3.4%</tspan></tspan>
-<tspan x="1022.4" dy="20"><tspan fill="#24292f"> . HTML           </tspan><tspan>                      </tspan><tspan fill="#24292f">                    2.1%</tspan></tspan>
+<tspan x="1022.4" dy="20"><tspan fill="#24292f"> . Jupyter Notebo </tspan><tspan>                      </tspan><tspan fill="#24292f">                   76.0%</tspan></tspan>
+<tspan x="1022.4" dy="20"><tspan fill="#24292f"> . Python         </tspan><tspan>                      </tspan><tspan fill="#24292f">                   11.2%</tspan></tspan>
+<tspan x="1022.4" dy="20"><tspan fill="#24292f"> . SystemVerilog  </tspan><tspan>                      </tspan><tspan fill="#24292f">                    5.5%</tspan></tspan>
+<tspan x="1022.4" dy="20"><tspan fill="#24292f"> . Verilog        </tspan><tspan>                      </tspan><tspan fill="#24292f">                    3.3%</tspan></tspan>
+<tspan x="1022.4" dy="20"><tspan fill="#24292f"> . HTML           </tspan><tspan>                      </tspan><tspan fill="#24292f">                    2.0%</tspan></tspan>
 <tspan x="1022.4" dy="20"> </tspan>
-<tspan x="1022.4" dy="20"><tspan fill="#1f7a6f"> . Last Updated:</tspan><tspan fill="#c4cbd4"> ...........................</tspan><tspan fill="#24292f"> 2026-09-16 14:45 UTC</tspan></tspan>
+<tspan x="1022.4" dy="20"><tspan fill="#1f7a6f"> . Last Updated:</tspan><tspan fill="#c4cbd4"> ...........................</tspan><tspan fill="#24292f"> 2026-09-16 18:03 UTC</tspan></tspan>
 </text>
 </svg>

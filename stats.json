@@ -6,43 +6,43 @@
   "stars": 6,
   "followers": 6,
   "following": 9,
-  "commits": 60,
-  "commits_this_year": 21,
-  "contributions_total": 80,
-  "loc_added": 12316,
-  "loc_deleted": 50,
-  "loc_net": 12266,
+  "commits": 68,
+  "commits_this_year": 28,
+  "contributions_total": 87,
+  "loc_added": 13676,
+  "loc_deleted": 102,
+  "loc_net": 13574,
   "top_repo": "LMS_RLS_verilog",
   "top_repo_stars": 3,
   "languages": [
     {
       "name": "Jupyter Notebook",
       "bytes": 1184543,
-      "pct": 77.5,
+      "pct": 76.0,
       "color": "#DA5B0B"
     },
     {
       "name": "Python",
-      "bytes": 144363,
-      "pct": 9.4,
+      "bytes": 173994,
+      "pct": 11.2,
       "color": "#3572A5"
     },
     {
       "name": "SystemVerilog",
       "bytes": 86396,
-      "pct": 5.7,
+      "pct": 5.5,
       "color": "#DAE1C2"
     },
     {
       "name": "Verilog",
       "bytes": 52111,
-      "pct": 3.4,
+      "pct": 3.3,
       "color": "#b2b7f8"
     },
     {
       "name": "HTML",
       "bytes": 31767,
-      "pct": 2.1,
+      "pct": 2.0,
       "color": "#e34c26"
     },
     {
@@ -64,5 +64,5 @@
       "color": "#d0b68c"
     }
   ],
-  "updated": "2026-09-16 14:45 UTC"
+  "updated": "2026-09-16 18:03 UTC"
 }
