@@ -12,6 +12,7 @@ If stats.json is missing, placeholder values are used so the card still builds
 
 import html
 import json
+import re
 import sys
 from datetime import date, datetime, timedelta
 from pathlib import Path
@@ -183,17 +184,33 @@ def build_lines(width, colours, subs, stats):
 #  rendering
 # ──────────────────────────────────────────────────────────────────
 
-def render(theme, art_lines, art_cols, rows, info_cols, subs, stats):
+def render(theme, art_lines, art_cols, art_rows, info_cols, subs, stats):
     c = config.THEMES[theme]
     cw, lh, pad = config.CHAR_W, config.LINE_HEIGHT, config.PAD
+    stacked = getattr(config, "LAYOUT", "side") == "stacked"
 
     lines, bars = build_lines(info_cols, c, subs, stats)
+    info_rows = len(lines) + 1                    # +1 for the prompt line
 
-    art_x = pad
-    info_x = pad + (art_cols + config.GAP_COLS) * cw
-    width = round(info_x + info_cols * cw + pad)
-    height = round(pad * 2 + rows * lh)
     y0 = pad + config.FONT_SIZE
+    art_x = pad
+
+    if stacked:
+        # Art above, info below. Width is max() rather than sum(), which is
+        # what actually makes the text render larger on GitHub.
+        info_x = pad
+        art_y = y0
+        info_y = y0 + (art_rows + 1) * lh if art_lines else y0
+        total_cols = max(art_cols, info_cols)
+        total_rows = (art_rows + 1 if art_lines else 0) + info_rows
+    else:
+        info_x = pad + (art_cols + config.GAP_COLS) * cw
+        art_y = info_y = y0
+        total_cols = art_cols + config.GAP_COLS + info_cols
+        total_rows = max(art_rows, info_rows)
+
+    width = round(pad * 2 + total_cols * cw)
+    height = round(pad * 2 + total_rows * lh)
 
     out = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
@@ -205,7 +222,7 @@ def render(theme, art_lines, art_cols, rows, info_cols, subs, stats):
 
     # ASCII art
     if art_lines:
-        out.append(f'<text x="{art_x}" y="{y0}" fill="{c["ascii"]}" xml:space="preserve">')
+        out.append(f'<text x="{art_x}" y="{art_y}" fill="{c["ascii"]}" xml:space="preserve">')
         for i, line in enumerate(art_lines):
             out.append(f'<tspan x="{art_x}" dy="{0 if i == 0 else lh}">{esc(line) or " "}</tspan>')
         out.append("</text>")
@@ -216,7 +233,7 @@ def render(theme, art_lines, art_cols, rows, info_cols, subs, stats):
     bar_h = 9
     for row, pct, colour in bars:
         # row 0 of `lines` is the line after the prompt line
-        cy = y0 + (row + 1) * lh
+        cy = info_y + (row + 1) * lh
         by = cy - config.FONT_SIZE * 0.72
         out.append(f'<rect x="{bar_x:.1f}" y="{by:.1f}" width="{bar_w:.1f}" '
                    f'height="{bar_h}" rx="{bar_h/2}" fill="{c["bartrack"]}"/>')
@@ -225,7 +242,7 @@ def render(theme, art_lines, art_cols, rows, info_cols, subs, stats):
                    f'height="{bar_h}" rx="{bar_h/2}" fill="{colour}"/>')
 
     # info column
-    out.append(f'<text x="{info_x}" y="{y0}" xml:space="preserve">')
+    out.append(f'<text x="{info_x}" y="{info_y}" xml:space="preserve">')
     rule = "-" * max(info_cols - len(config.PROMPT) - 1, 0)
     out.append(
         f'<tspan x="{info_x}" dy="0">'
@@ -310,21 +327,52 @@ def main():
         max(entry_width(e, subs, stats) for e in config.INFO),
         len(config.PROMPT) + 10,
     )
-    n_info_lines = len(build_lines(info_cols, config.THEMES["dark"], subs, stats)[0])
-    rows = max(
-        max((len(lines) for lines, _ in arts.values()), default=0),
-        n_info_lines + 1,
-    )
+    art_rows = max((len(lines) for lines, _ in arts.values()), default=0)
 
+    width = None
     for theme in config.THEMES:
         art_lines, src = arts[theme]
-        svg = render(theme, art_lines, art_cols, rows, info_cols, subs, stats)
+        svg = render(theme, art_lines, art_cols, art_rows, info_cols, subs, stats)
         (HERE / f"{theme}_mode.svg").write_text(svg, encoding="utf-8")
         print(f"wrote {theme}_mode.svg   (art: {src or 'none'})")
+        width = int(re.search(r'width="(\d+)"', svg).group(1))
 
-    print(f"  {art_cols} art cols, {info_cols} info cols, {rows} rows")
+    layout = getattr(config, "LAYOUT", "side")
+    print(f"  layout  {layout}   art {art_cols}x{art_rows} cols, info {info_cols} cols")
     print(f"  uptime  {subs['uptime']}")
     print(f"  stats   {stats['updated']}")
+    report_scale(width, layout, art_cols, info_cols)
+
+
+# GitHub's README content column is roughly this wide in CSS pixels. Anything
+# wider gets scaled down to fit, shrinking the text with it.
+README_COLUMN_PX = 830
+
+
+def report_scale(width, layout, art_cols, info_cols):
+    if not width:
+        return
+    scale = min(1.0, README_COLUMN_PX / width)
+    effective = config.FONT_SIZE * scale
+
+    print(f"\n  card is {width}px wide; GitHub's README column is ~{README_COLUMN_PX}px")
+    if scale >= 0.995:
+        print(f"  -> renders at full size, text reads at {config.FONT_SIZE}px. Good.")
+        return
+
+    print(f"  -> GitHub scales it to {scale * 100:.0f}%, so text reads at "
+          f"~{effective:.1f}px")
+    print("     Raising FONT_SIZE will NOT help — it scales down by the same "
+          "factor.")
+    print("     Fewer COLUMNS is the only lever:")
+    if layout == "side":
+        stacked_w = round(config.PAD * 2 + max(art_cols, info_cols) * config.CHAR_W)
+        stacked_s = min(1.0, README_COLUMN_PX / stacked_w)
+        print(f"       - LAYOUT = \"stacked\" in config.py -> {stacked_w}px "
+              f"({stacked_s * 100:.0f}%, ~{config.FONT_SIZE * stacked_s:.1f}px text)")
+    budget = int((README_COLUMN_PX - config.PAD * 2) / config.CHAR_W)
+    print(f"       - narrower ASCII art (fits at <= {budget} cols in stacked layout)")
+    print(f"       - shorten your longest INFO value (info is {info_cols} cols)")
 
 
 if __name__ == "__main__":
