@@ -1,8 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1478" height="1268" viewBox="0 0 1478 1268" font-family='"Andale Mono", AndaleMono, "Cascadia Mono", "DejaVu Sans Mono", "Liberation Mono", monospace' font-size="16">
-<rect x="0.5" y="0.5" width="1477" height="1267" rx="10" fill="#1a1b27" stroke="#2b2d40"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1478" height="1088" viewBox="0 0 1478 1088" font-family='"Andale Mono", AndaleMono, "Cascadia Mono", "DejaVu Sans Mono", "Liberation Mono", monospace' font-size="16">
+<rect x="0.5" y="0.5" width="1477" height="1087" rx="10" fill="#1a1b27" stroke="#2b2d40"/>
 <text x="24" y="40" fill="#8b93a7" xml:space="preserve">
-<tspan x="24" dy="0">                                                                                </tspan>
-<tspan x="24" dy="20">                                         --=                                    </tspan>
+<tspan x="24" dy="0">                                         --=                                    </tspan>
 <tspan x="24" dy="20">                                  +++++===--------                              </tspan>
 <tspan x="24" dy="20">                              ++==-----::::::::::----                           </tspan>
 <tspan x="24" dy="20">                            =-:--==-==----:::::::::::---                        </tspan>
@@ -54,14 +53,6 @@
 <tspan x="24" dy="20">=***+++**+=-:.:**##*+-+++...::::::::::::++==++++==-:===+++++*-------:.:---::----</tspan>
 <tspan x="24" dy="20">--*++++*+--::-**#*+-=*****-:::......:=++++++++*++-:-=+++++++-------..:---::-----</tspan>
 <tspan x="24" dy="20">::=+*+++=--=-:..:-+++*****=.......-*****++*++++==:.=++++*+--:---:...-----::-----</tspan>
-<tspan x="24" dy="20">::-+*++=++=--:.----+******+-..::=****+=---=====-.::+++++=-----:...::-----::-----</tspan>
-<tspan x="24" dy="20">:-::=**+++===-:-=====+*****=..-**+-:.......:---:::+++*+-----:.....:-----:-------</tspan>
-<tspan x="24" dy="20">-::::+++==+==-.--======-++++:=*-::::::::-=====-::+**+----:.......::-----::------</tspan>
-<tspan x="24" dy="20">:::::-***+++=-:-=====+=====+=:--:::-=+++++++==::**+-::..........::------::------</tspan>
-<tspan x="24" dy="20">::::::-++=++=-==+++++++++==*+--==+++++++++++=-:+*+:...........:::-------:-------</tspan>
-<tspan x="24" dy="20">:::::::+++*+=-=++++*+++++=+##=-++++++++++++---+-.....::::::::::-----------------</tspan>
-<tspan x="24" dy="20">:::::::-+*++=:==++++++++++++++:=++++****++=---......::::::::::------------:-----</tspan>
-<tspan x="24" dy="20">::::::::++=+=:-=++++*****++*++:=+++****++==-:......::::::::::-----------:::-----</tspan>
 </text>
 <rect x="1003.2" y="608.5" width="211.2" height="9" rx="4.5" fill="#2b2d40"/>
 <rect x="1003.2" y="608.5" width="160.5" height="9" rx="4.5" fill="#DA5B0B"/>
@@ -97,10 +88,10 @@
 <tspan x="830.4" dy="20"><tspan fill="#e4bf7a"> - GitHub Stats </tspan><tspan fill="#4a5163">-------------------------------------------------</tspan></tspan>
 <tspan x="830.4" dy="20"><tspan fill="#38bdae"> . Repos:</tspan><tspan fill="#3f465a"> ......................</tspan><tspan fill="#d9dde3"> 17 {Contributed: 0}  |  Stars: 6</tspan></tspan>
 <tspan x="830.4" dy="20"><tspan fill="#38bdae"> . Followers:</tspan><tspan fill="#3f465a"> ................................</tspan><tspan fill="#d9dde3"> 6  |  Following: 9</tspan></tspan>
-<tspan x="830.4" dy="20"><tspan fill="#38bdae"> . Commits:</tspan><tspan fill="#3f465a"> ................................</tspan><tspan fill="#d9dde3"> 74  |  This year: 35</tspan></tspan>
-<tspan x="830.4" dy="20"><tspan fill="#38bdae"> . Contributions:</tspan><tspan fill="#3f465a"> ...................................</tspan><tspan fill="#d9dde3"> 94 all time</tspan></tspan>
+<tspan x="830.4" dy="20"><tspan fill="#38bdae"> . Commits:</tspan><tspan fill="#3f465a"> ................................</tspan><tspan fill="#d9dde3"> 76  |  This year: 37</tspan></tspan>
+<tspan x="830.4" dy="20"><tspan fill="#38bdae"> . Contributions:</tspan><tspan fill="#3f465a"> ...................................</tspan><tspan fill="#d9dde3"> 96 all time</tspan></tspan>
 <tspan x="830.4" dy="20"><tspan fill="#38bdae"> . Most Starred:</tspan><tspan fill="#3f465a"> ............................</tspan><tspan fill="#d9dde3"> LMS_RLS_verilog (3)</tspan></tspan>
-<tspan x="830.4" dy="20"><tspan fill="#38bdae"> . Lines of Code:</tspan><tspan fill="#3f465a"> ...................</tspan><tspan fill="#d9dde3"> 13,596 ( </tspan><tspan fill="#3fb950">13,885++</tspan><tspan fill="#d9dde3">, </tspan><tspan fill="#f85149">289--</tspan><tspan fill="#d9dde3"> )</tspan></tspan>
+<tspan x="830.4" dy="20"><tspan fill="#38bdae"> . Lines of Code:</tspan><tspan fill="#3f465a"> ...................</tspan><tspan fill="#d9dde3"> 13,578 ( </tspan><tspan fill="#3fb950">13,885++</tspan><tspan fill="#d9dde3">, </tspan><tspan fill="#f85149">307--</tspan><tspan fill="#d9dde3"> )</tspan></tspan>
 <tspan x="830.4" dy="20"> </tspan>
 <tspan x="830.4" dy="20"><tspan fill="#e4bf7a"> - Top Languages </tspan><tspan fill="#4a5163">------------------------------------------------</tspan></tspan>
 <tspan x="830.4" dy="20"><tspan fill="#d9dde3"> . Jupyter Notebo </tspan><tspan>                      </tspan><tspan fill="#d9dde3">                   76.0%</tspan></tspan>
@@ -109,6 +100,6 @@
 <tspan x="830.4" dy="20"><tspan fill="#d9dde3"> . Verilog        </tspan><tspan>                      </tspan><tspan fill="#d9dde3">                    3.3%</tspan></tspan>
 <tspan x="830.4" dy="20"><tspan fill="#d9dde3"> . HTML           </tspan><tspan>                      </tspan><tspan fill="#d9dde3">                    2.0%</tspan></tspan>
 <tspan x="830.4" dy="20"> </tspan>
-<tspan x="830.4" dy="20"><tspan fill="#38bdae"> . Last Updated:</tspan><tspan fill="#3f465a"> ...........................</tspan><tspan fill="#d9dde3"> 2026-09-16 18:30 UTC</tspan></tspan>
+<tspan x="830.4" dy="20"><tspan fill="#38bdae"> . Last Updated:</tspan><tspan fill="#3f465a"> ...........................</tspan><tspan fill="#d9dde3"> 2026-09-16 18:36 UTC</tspan></tspan>
 </text>
 </svg>
