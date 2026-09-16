@@ -72,15 +72,6 @@ INFO = [
 
 # ── looks ──────────────────────────────────────────────────────────
 
-# "side"    art on the left, info on the right  (wide card)
-# "stacked" art on top, info underneath         (narrow card, bigger text)
-#
-# GitHub scales the card down to fit its ~830px README column, so a wide card
-# means small text. Raising FONT_SIZE does nothing — it scales down by the same
-# factor. Fewer COLUMNS is the only lever, and "stacked" makes the width
-# max(art, info) instead of art + info. Every build prints the numbers.
-LAYOUT      = "stacked"
-
 FONT_SIZE   = 16
 LINE_HEIGHT = 20
 CHAR_W      = FONT_SIZE * 0.6        # monospace advance width
